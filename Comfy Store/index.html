@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="styles.css" rel="stylesheet"/>
+        <title> Comfy Store </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+
+    </head>
+
+    <div class="overlay"></div>
+
+    <div class="navPart">
+        <div class="toggle">
+            <i class="fa fa-bars" aria-hidden="true"></i> 
+        </div>
+        <div class="itemList">
+
+            <div class="itemOne homebtn">
+                Home
+            </div>
+
+            <div class="itemOne productbtn">
+                Products
+            </div>
+
+            <div class="itemOne aboutbtn">
+                About
+            </div>
+
+        </div>
+
+        <div class="heading">
+            Comfy
+        </div>
+
+        <div class="cart">
+
+            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+
+        </div>
+
+    </div>
+
+    <div class="modal">
+        <div class="icon">
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+
+        <div class="heads">
+            <div class="single">
+                <div class="iconsingle">
+                    <i class="fa fa-home" aria-hidden="true"></i>
+                </div>
+                <div class="tag homebtn2">
+                    
+                    Home
+                </div>
+            </div>
+        
+
+        
+            <div class="single">
+                <div class="iconsingle">
+                    <i class="fa fa-product-hunt" aria-hidden="true"></i>
+                </div>
+                <div class="tag productbtn2">
+                    Products
+                </div>
+            </div>
+        
+
+        
+            <div class="single">
+                <div class="iconsingle">
+                   
+                    <i class="fa fa-book" aria-hidden="true"></i>
+                </div>
+                <div class="tag aboutbtn2">
+                    About
+                </div>
+            </div>
+        
+    </div>
+    </div>
+
+
+
+    <div class="homesec" id="home">
+
+        <div class="coverPart">
+            <div class="banner">
+                Rest,Relax,Unwind
+            </div>
+        
+            <div class="intro">
+                Embrace your choices-we do
+            </div>
+        
+            <div class="btn">
+                SHOW NOW
+            </div>
+        
+        </div>
+        
+        
+                
+        
+        
+            <div class="Featured">
+                <div class="heading2">
+                    Featured
+                </div>
+            
+                <div class="itempics">
+                    <div class="eachitem" id="a" onmouseover="iconDisplay(this.id)" onmouseout="iconHide(this.id)" >
+            
+                        <div class="pic">
+                            <img src="6d92321b.jpg" class="image">
+                        </div>
+                        <div class="name">
+                            High-Back Bench
+                        </div>
+                        <div class="price">
+                            $9.99
+                        </div>
+
+                        <div class="icons ia">
+                            <div class="searchIcon" onclick="display1func()">
+    
+                                <i class="fa fa-search" aria-hidden="true"></i>
+    
+                            </div>
+    
+                            <div class="cartIcon" id="x1" onclick="addItems(this.id)">
+    
+                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+    
+                            </div>
+                        </div>
+            
+                    </div>
+            
+                    <div class="eachitem" id="b" onmouseover="iconDisplay(this.id)" onmouseout="iconHide(this.id)">
+            
+                        <div class="pic">
+                            <img src="22e0d8df.jpg" class="image">
+                        </div>
+                        <div class="name">
+                            Utopia Sofa
+                        </div>
+                        <div class="price">
+                            $39.95
+                        </div>
+
+                        <div class="icons ib">
+                            <div class="searchIcon" onclick="display2func()">
+    
+                                <i class="fa fa-search" aria-hidden="true"></i>
+    
+                            </div>
+    
+                            <div class="cartIcon" id="x2" onclick="addItems(this.id)">
+    
+                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+    
+                            </div>
+                        </div>
+                        
+                    </div>
+            
+                    <div class="eachitem" id="c" onmouseover="iconDisplay(this.id)" onmouseout="iconHide(this.id)" >
+            
+                        <div class="pic">
+                            <img src="078958cd.jpg" class="image">
+                        </div>
+                        <div class="name">
+                            Entertainment Center
+                        </div>
+                        <div class="price">
+                            $29.98
+                        </div>
+
+                        <div class="icons ic">
+                            <div class="searchIcon" onclick="display3func()">
+    
+                                <i class="fa fa-search" aria-hidden="true"></i>
+    
+                            </div>
+    
+                            <div class="cartIcon" id="x3" onclick="addItems(this.id)">
+    
+                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+    
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+                <div class="butn">
+                    ALL PRODUCTS
+                </div>
+            </div>
+
+    </div>
+    
+
+        
+
+    <div id="product" class="productsSection">
+        <div class="heading3">
+            Home/Products
+        </div>
+        <div class="mainBlock">
+
+            <div class="leftBlock">
+                <div class="search">
+                    <input class="finding" type="text" placeholder="Search..." onkeydown="searchFunction(event.keyCode)">
+                </div> 
+     
+                <div class="CompanyList">
+                    <div class="headingCompany">
+                        Company
+                    </div>
+     
+                    <div class="item allbtn">
+                        All
+                    </div>
+     
+                    <div class="item ikeabtn">
+                        Ikea
+                     </div>
+     
+                     <div class="item macrosbtn">
+                        Macros
+                     </div>
+     
+                     <div class="item caressabtn">
+                        Caressa
+                     </div>
+     
+                     <div class="item liddybtn">
+                        Liddy
+                     </div>
+                </div>
+     
+                <div class="PriceHead">
+                    Price
+                </div>
+     
+                <div class="slide">
+                    <input type="range" min="0" max="80" class="slider" onchange="slideval()">
+
+                </div>
+     
+                <div class="Val">
+                    Value:$80
+                </div>
+             </div>
+
+             <div class="rightBlock">
+
+                <div  class="singleBlock ikea" id="1" onmouseover="iconDisplay(this.id)" onmouseout="iconHide(this.id)">
+                    <div class="picItem">
+                        <img src="6d92321b.jpg"  class="imageItem z1">
+                    </div>
+                    <div class="NameItem n1">
+                        High-Back Bench
+                    </div>
+                    <div class="PriceItem p1">
+                        $9.99
+                    </div>
+                    <div class="icons i1">
+                        <div class="searchIcon s1" onclick="display1func()">
+
+                            <i class="fa fa-search" aria-hidden="true"></i>
+
+                        </div>
+
+                        <div class="cartIcon" id="c1" onclick="addItems(this.id)">
+
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+
+                        </div>
+                    </div>
+                </div>
+
+
+    
+                <div class="singleBlock macros" id="2" onmouseover="iconDisplay(this.id)" onmouseout="iconHide(this.id)">
+                    <div class="picItem ">
+                        <img src="30525671.jpg" class="imageItem z2">
+                    </div>
+                    <div class="NameItem n2">
+                        Albany Table
+                    </div>
+                    <div class="PriceItem p2">
+                        $79.99                    
+                    </div>
+                    <div class="icons i2">
+                        <div class="searchIcon" onclick="display2func()">
+
+                            <i class="fa fa-search" aria-hidden="true"></i>
+
+                        </div>
+
+                        <div class="cartIcon" id="c2" onclick="addItems(this.id)">
+
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+
+                        </div>
+                    </div>
+                </div>
+
+
+    
+                <div class="singleBlock caressa" id="3" onmouseover="iconDisplay(this.id)" onmouseout="iconHide(this.id)">
+                    <div class="picItem">
+                        <img src="e0407792.jpg" class="imageItem  z3">
+                    </div>
+                    <div class="NameItem n3">
+                        Accent Chair
+                    </div>
+                    <div class="PriceItem p3">
+                        $25.99                    
+                    </div>
+                    <div class="icons i3">
+                        <div class="searchIcon"  onclick="display3func()">
+
+                            <i class="fa fa-search" aria-hidden="true"></i>
+
+                        </div>
+
+                        <div class="cartIcon" id="c3" onclick="addItems(this.id)">
+
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="singleBlock caressa" id="4" onmouseover="iconDisplay(this.id)" onmouseout="iconHide(this.id)">
+                    <div class="picItem">
+                        <img src="2fcbbbba.jpg" class="imageItem  z4">
+                    </div>
+                    <div class="NameItem n4">
+                       Wooden Table
+                    </div>
+                    <div class="PriceItem p4">
+                        $45.99                    
+                    </div>
+                    <div class="icons i4">
+                        <div class="searchIcon" onclick="display4func()">
+
+                            <i class="fa fa-search" aria-hidden="true"></i>
+
+                        </div>
+
+                        <div class="cartIcon" id="c4" onclick="addItems(this.id)">
+
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="singleBlock caressa" id="5" onmouseover="iconDisplay(this.id)" onmouseout="iconHide(this.id)">
+                    <div class="picItem">
+                        <img src="dbcee29d.jpg" class="imageItem  z5">
+                    </div>
+                    <div class="NameItem n5">
+                      Dining Table
+                    </div>
+                    <div class="PriceItem p5">
+                        $6.99                    
+                    </div>
+                    <div class="icons i5" onclick="display5func()">
+                        <div class="searchIcon">
+
+                            <i class="fa fa-search" aria-hidden="true"></i>
+
+                        </div>
+
+                        <div class="cartIcon" id="c5" onclick="addItems(this.id)">
+
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="singleBlock liddy" id="6" onmouseover="iconDisplay(this.id)" onmouseout="iconHide(this.id)">
+                    <div class="picItem">
+                        <img src="91111f2f.jpg" class="imageItem  z6">
+                    </div>
+                    <div class="NameItem n6">
+                    Sofa Set
+                    </div>
+                    <div class="PriceItem p6">
+                        $69.99                    
+                    </div>
+                    <div class="icons i6">
+                        <div class="searchIcon" onclick="display6func()">
+
+                            <i class="fa fa-search" aria-hidden="true"></i>
+
+                        </div>
+
+                        <div class="cartIcon" id="c6" onclick="addItems(this.id)">
+
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="singleBlock macros" id="7" onmouseover="iconDisplay(this.id)" onmouseout="iconHide(this.id)">
+                    <div class="picItem">
+                        <img src="70f9bf4a.jpg" class="imageItem  z7">
+                    </div>
+                    <div class="NameItem n7">
+                    Modern Bookshelf
+                    </div>
+                    <div class="PriceItem p7">
+                        $8.99                    
+                    </div>
+                    <div class="icons i7" onclick="display7func()">
+                        <div class="searchIcon">
+
+                            <i class="fa fa-search" aria-hidden="true"></i>
+
+                        </div>
+
+                        <div class="cartIcon" id="c7" onclick="addItems(this.id)">
+
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="singleBlock liddy" id="8" onmouseover="iconDisplay(this.id)" onmouseout="iconHide(this.id)">
+                    <div class="picItem">
+                        <img src="cf460909.jpg" class="imageItem  z8">
+                    </div>
+                    <div class="NameItem n8">
+                        Emperor Bed
+                    </div>
+                    <div class="PriceItem p8">
+                        $21.99                    
+                    </div>
+                    <div class="icons i8">
+                        <div class="searchIcon" onclick="display8func()">
+
+                            <i class="fa fa-search" aria-hidden="true"></i>
+
+                        </div>
+
+                        <div class="cartIcon" id="c8" onclick="addItems(this.id)">
+
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="singleBlock macros" id="9" onmouseover="iconDisplay(this.id)" onmouseout="iconHide(this.id)">
+                    <div class="picItem">
+                        <img src="22e0d8df.jpg" class="imageItem  z9">
+                    </div>
+                    <div class="NameItem n9">
+                        Utopia Sofa
+                    </div>
+                    <div class="PriceItem p9">
+                        $39.95                    
+                    </div>
+                    <div class="icons i9">
+                        <div class="searchIcon" onclick="display9func()">
+
+                            <i class="fa fa-search" aria-hidden="true"></i>
+
+                        </div>
+
+                        <div class="cartIcon" id="c9" onclick="addItems(this.id)">
+
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="singleBlock liddy" id="10" onmouseover="iconDisplay(this.id)" onmouseout="iconHide(this.id)">
+                    <div class="picItem">
+                        <img src="078958cd.jpg" class="imageItem  z10">
+                    </div>
+                    <div class="NameItem n10">
+                       Entertainment Center
+                    </div>
+                    <div class="PriceItem p10">
+                        $29.98                    
+                    </div>
+                    <div class="icons i10">
+                        <div class="searchIcon" onclick="display10func()">
+
+                            <i class="fa fa-search" aria-hidden="true"></i>
+
+                        </div>
+
+                        <div class="cartIcon" id="c10" onclick="addItems(this.id)">
+
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="singleBlock ikea " id="11" onmouseover="iconDisplay(this.id)" onmouseout="iconHide(this.id)">
+                    <div class="picItem">
+                        <img src="dfa5455c.jpg" class="imageItem  z11">
+                    </div>
+                    <div class="NameItem n11">
+                      Albany Sectional
+                    </div>
+                    <div class="PriceItem p11">
+                        $10.99                    
+                    </div>
+                    <div class="icons i11">
+                        <div class="searchIcon" onclick="display11func()">
+
+                            <i class="fa fa-search" aria-hidden="true"></i>
+
+                        </div>
+
+                        <div class="cartIcon" id="c11" onclick="addItems(this.id)">
+
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="singleBlock liddy" id="12" onmouseover="iconDisplay(this.id)" onmouseout="iconHide(this.id)">
+                    <div class="picItem">
+                        <img src="668e4a7e.jpg" class="imageItem  z12">
+                    </div>
+                    <div class="NameItem n12">
+                        Leather Sofa
+                    </div>
+                    <div class="PriceItem p12">
+                        $9.99                    
+                    </div>
+                    <div class="icons i12">
+                        <div class="searchIcon" onclick="display12func()">
+
+                            <i class="fa fa-search" aria-hidden="true"></i>
+
+                        </div>
+
+                        <div class="cartIcon" id="c12" onclick="addItems(this.id)">
+
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+
+                        </div>
+                    </div>
+                </div>
+    
+    
+    
+         </div>
+
+        </div>
+
+       
+        
+    </div>
+
+    <div id="about" class="AboutSection">
+        <div class="sec">
+            Home/About
+        </div>
+
+        <div class="AboutHeading">
+            / Our History
+        </div>
+
+        <div class="content">
+
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat accusantium sapiente tempora sed dolore esse deserunt eaque excepturi, delectus error accusamus vel eligendi, omnis beatae. Quisquam, dicta. Eos quod quisquam esse recusandae vitae neque dolore, obcaecati incidunt sequi blanditiis est exercitationem molestiae delectus saepe odio eligendi modi porro eaque in libero minus unde sapiente consectetur architecto. Ullam rerum, nemo iste ex, eaque perspiciatis nisi, eum totam velit saepe sed quos similique amet. Ex, voluptate accusamus nesciunt totam vitae esse iste.
+
+        </div>
+
+    </div>
+
+    <div class="details1">
+
+        <div class="headingItem">
+            Home/High-Back Bench
+        </div>
+
+        <div class="pictureItem">
+            <img src="6d92321b.jpg"  class="imgItem">
+        </div>
+
+        <div class="NameOfItem">
+            High-Back Bench
+        </div>
+
+        <div class="BrandItem">
+            BY IKEA
+        </div>
+
+        <div class="PriceOfItem">
+            $9.99
+        </div>
+
+        <div class="Colors">
+            <div class="color1">
+
+            </div>
+            <div class="color2">
+
+            </div>
+        </div>
+
+        <div class="ContentItem">
+
+            Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge
+
+        </div>
+
+        <div class="ButtonItem" id="b1" onclick="addItems(this.id)">
+            ADD TO CART
+        </div>
+    </div>
+
+    <div class="details2">
+
+        <div class="headingItem">
+            Home/Albany Table
+        </div>
+
+        <div class="pictureItem">
+            <img src="30525671.jpg" class="imgItem">
+        </div>
+
+        <div class="NameOfItem">
+            Albany Table
+        </div>
+
+        <div class="BrandItem">
+            BY MACROS
+        </div>
+
+        <div class="PriceOfItem">
+            $79.99
+        </div>
+
+        <div class="Colors">
+            <div class="color1">
+
+            </div>
+            <div class="color2">
+
+            </div>
+        </div>
+
+        <div class="ContentItem">
+
+            Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge
+
+        </div>
+
+        <div class="ButtonItem" id="b2" onclick="addItems(this.id)">
+            ADD TO CART
+        </div>
+    </div>
+
+    <div class="details3">
+
+        <div class="headingItem">
+            Home/Accent Chair
+        </div>
+
+        <div class="pictureItem">
+            <img src="e0407792.jpg" class="imgItem">
+        </div>
+
+        <div class="NameOfItem">
+            Accent Chair
+        </div>
+
+        <div class="BrandItem">
+            BY CARESSA
+        </div>
+
+        <div class="PriceOfItem">
+            $25.99
+        </div>
+
+        <div class="Colors">
+            <div class="color1">
+
+            </div>
+            <div class="color2">
+
+            </div>
+            <div class="color3">
+
+            </div>
+        </div>
+
+        <div class="ContentItem">
+
+            Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge
+
+        </div>
+
+        <div class="ButtonItem" id="b3" onclick="addItems(this.id)">
+            ADD TO CART
+        </div>
+    </div>
+
+    <div class="details4">
+
+        <div class="headingItem">
+            Home/Wooden Table
+        </div>
+
+        <div class="pictureItem">
+            <img src="2fcbbbba.jpg" class="imgItem">
+        </div>
+
+        <div class="NameOfItem">
+            Wooden Table
+        </div>
+
+        <div class="BrandItem">
+            BY CARESSA
+        </div>
+
+        <div class="PriceOfItem">
+            $45.99
+        </div>
+
+        <div class="Colors">
+            <div class="color1">
+
+            </div>
+            
+            <div class="color3">
+
+            </div>
+        </div>
+
+        <div class="ContentItem">
+
+            Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge
+
+        </div>
+
+        <div class="ButtonItem" id="b4" onclick="addItems(this.id)">
+            ADD TO CART
+        </div>
+    </div>
+
+    <div class="details5">
+
+        <div class="headingItem">
+            Home/Dining Table
+        </div>
+
+        <div class="pictureItem">
+            <img src="dbcee29d.jpg" class="imgItem">
+        </div>
+
+        <div class="NameOfItem">
+            Dining Table
+        </div>
+
+        <div class="BrandItem">
+            BY CARESSA
+        </div>
+
+        <div class="PriceOfItem">
+            $6.99
+        </div>
+
+        <div class="Colors">
+            <div class="color2">
+
+            </div>
+            
+            <div class="color3">
+
+            </div>
+        </div>
+
+        <div class="ContentItem">
+
+            Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge
+
+        </div>
+
+        <div class="ButtonItem" id="b5" onclick="addItems(this.id)">
+            ADD TO CART
+        </div>
+    </div>
+
+    
+    <div class="details6">
+
+        <div class="headingItem">
+            Home/Sofa Set
+        </div>
+
+        <div class="pictureItem">
+            <img src="91111f2f.jpg" class="imgItem">
+        </div>
+
+        <div class="NameOfItem">
+           Sofa Set
+        </div>
+
+        <div class="BrandItem">
+            BY LIDDY
+        </div>
+
+        <div class="PriceOfItem">
+            $69.99
+        </div>
+
+        <div class="Colors">
+            <div class="color1">
+
+            </div>
+            
+            
+        </div>
+
+        <div class="ContentItem">
+
+            Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge
+
+        </div>
+
+        <div class="ButtonItem" id="b6" onclick="addItems(this.id)">
+            ADD TO CART
+        </div>
+    </div>
+
+     
+    <div class="details7">
+
+        <div class="headingItem">
+            Home/Modern Bookshelf
+        </div>
+
+        <div class="pictureItem">
+            <img src="70f9bf4a.jpg" class="imgItem">
+        </div>
+
+        <div class="NameOfItem">
+           Modern Bookshelf
+        </div>
+
+        <div class="BrandItem">
+                BY MACROS
+        </div>
+
+        <div class="PriceOfItem">
+            $69.99
+        </div>
+
+        <div class="Colors">
+            <div class="color1">
+
+            </div>
+
+            <div class="color2">
+
+            </div>
+            
+            <div class="color3">
+
+            </div>
+            
+            
+            
+        </div>
+
+        <div class="ContentItem">
+
+            Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge
+
+        </div>
+
+        <div class="ButtonItem" id="b7" onclick="addItems(this.id)">
+            ADD TO CART
+        </div>
+    </div>
+
+    <div class="details8">
+
+        <div class="headingItem">
+            Home/Emperor Bed
+        </div>
+
+        <div class="pictureItem">
+            <img src="cf460909.jpg" class="imgItem">
+        </div>
+
+        <div class="NameOfItem">
+            Emperor Bed
+        </div>
+
+        <div class="BrandItem">
+                BY LIDDY
+        </div>
+
+        <div class="PriceOfItem">
+            $21.99
+        </div>
+
+        <div class="Colors">
+            
+
+            <div class="color2">
+
+            </div>
+            
+            
+            
+            
+            
+        </div>
+
+        <div class="ContentItem">
+
+            Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge
+
+        </div>
+
+        <div class="ButtonItem" id="b8" onclick="addItems(this.id)">
+            ADD TO CART
+        </div>
+    </div>
+
+    <div class="details9">
+
+        <div class="headingItem">
+            Home/Emperor Bed
+        </div>
+
+        <div class="pictureItem">
+            <img src="22e0d8df.jpg" class="imgItem">
+        </div>
+
+        <div class="NameOfItem">
+            Utopia Sofa
+        </div>
+
+        <div class="BrandItem">
+                BY MACROS
+        </div>
+
+        <div class="PriceOfItem">
+            $39.95
+        </div>
+
+        <div class="Colors">
+            
+
+            <div class="color3">
+
+            </div>
+
+            <div class="color2">
+
+            </div>
+            
+            
+            
+            
+            
+        </div>
+
+        <div class="ContentItem">
+
+            Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge
+
+        </div>
+
+        <div class="ButtonItem" id="b9" onclick="addItems(this.id)">
+            ADD TO CART
+        </div>
+    </div>
+
+    <div class="details10">
+
+        <div class="headingItem">
+            Home/Entertainment Center
+        </div>
+
+        <div class="pictureItem">
+            <img src="078958cd.jpg" class="imgItem">
+        </div>
+
+        <div class="NameOfItem">
+            Entertainment Center
+        </div>
+
+        <div class="BrandItem">
+                BY LIDDY
+        </div>
+
+        <div class="PriceOfItem">
+            $29.98
+        </div>
+
+        <div class="Colors">
+            
+
+            <div class="color3">
+
+            </div>
+
+            <div class="color2">
+
+            </div>
+            
+            
+            
+            
+            
+        </div>
+
+        <div class="ContentItem">
+
+            Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge
+
+        </div>
+
+        <div class="ButtonItem" id="b10" onclick="addItems(this.id)">
+            ADD TO CART
+        </div>
+    </div>
+
+    <div class="details11">
+
+        <div class="headingItem">
+            Home/Albany Sectional
+        </div>
+
+        <div class="pictureItem">
+            <img src="dfa5455c.jpg" class="imgItem">
+        </div>
+
+        <div class="NameOfItem">
+            Albany Sectional
+        </div>
+
+        <div class="BrandItem">
+                BY IKEA
+        </div>
+
+        <div class="PriceOfItem">
+            $10.99
+        </div>
+
+        <div class="Colors">
+            
+
+            <div class="color3">
+
+            </div>
+
+            <div class="color2">
+
+            </div>
+            
+            
+            
+            
+            
+        </div>
+
+        <div class="ContentItem">
+
+            Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge
+
+        </div>
+
+        <div class="ButtonItem" id="b11" onclick="addItems(this.id)" >
+            ADD TO CART
+        </div>
+    </div>
+
+    <div class="details12">
+
+        <div class="headingItem">
+            Home/Leather Sofa
+        </div>
+
+        <div class="pictureItem">
+            <img src="668e4a7e.jpg" class="imgItem">
+        </div>
+
+        <div class="NameOfItem">
+            Leather Sofa
+        </div>
+
+        <div class="BrandItem">
+                BY LIDDY
+        </div>
+
+        <div class="PriceOfItem">
+            $9.99
+        </div>
+
+        <div class="Colors">
+            
+            <div class="color1">
+
+            </div>
+
+            <div class="color3">
+
+            </div>
+
+            <div class="color2">
+
+            </div>
+            
+            
+            
+            
+            
+        </div>
+
+        <div class="ContentItem">
+
+            Cloud bread VHS hell of banjo bicycle rights jianbing umami mumblecore etsy 8-bit pok pok +1 wolf. Vexillologist yr dreamcatcher waistcoat, authentic chillwave trust fund. Viral typewriter fingerstache pinterest pork belly narwhal. Schlitz venmo everyday carry kitsch pitchfork chillwave iPhone taiyaki trust fund hashtag kinfolk microdosing gochujang live-edge
+
+        </div>
+
+        <div class="ButtonItem" id="b12" onclick="addItems(this.id)">
+            ADD TO CART
+        </div>
+    </div>
+
+<div class="Cartsection">
+
+    <div class="CloseSection">
+
+        <i class="fa fa-times" aria-hidden="true"></i>
+
+     </div>
+
+     <div class="HeadingBag">
+
+        Your Bag
+
+     </div>
+
+     <div class="ItemListCart">
+
+        <div class="SingleItemOfCart">
+
+            <ul1 class="pics">
+
+            </ul1>
+
+            
+            <ul >
+
+            </ul>
+            
+
+        </div>
+      
+       
+     </div>
+
+     <div class="totalVal">
+
+         Total:$0
+
+     </div>
+
+     <div class="checkBtn">
+
+        Check Out
+
+     </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     
+<script src="app.js"></script>      
+</html>

@@ -1,0 +1,852 @@
+*
+{
+    box-sizing: border-box;
+    margin:0%;
+    padding:0%;
+}
+html
+{
+    
+    font-family: 'Lobster', cursive;
+    font-family: 'Poppins', sans-serif;
+  
+}
+
+.coverPart
+{
+    
+    padding-top: 0%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('main-bcg.jpeg');
+    background-repeat: none;
+    background-size: cover;
+    background-position: center;
+    max-height: 50rem;
+    min-height: 50rem;
+}
+.navPart
+{
+   
+    padding-bottom: 0%;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0%;
+}
+.itemList
+{
+    padding-left:1.5rem;
+    display: flex;
+    flex-direction: row;
+    padding-top:1.5rem;
+    position:relative;
+}
+.itemOne
+{
+    font-size: 20px;
+    letter-spacing: 5px;
+    color:#B88112;
+    padding-right: 2rem;
+    font-weight: bold;
+
+}
+.heading
+{
+    font-family: 'Dancing Script', cursive;
+    font-size: 55px;
+    letter-spacing: 6px;
+    font-weight: bolder;
+    text-align: center;
+    padding-left: 3%;
+    color: #B88112;
+    position:absolute;
+     right:40%;
+     text-shadow: #E2E2E2 0.25rem 0.25rem 0.25rem;
+     
+
+}
+.cart
+{
+    font-size: 35px;
+    padding-top: 1.5rem;
+    position: absolute;
+    right:1rem;
+    color:#B88112;
+}
+.toggle
+{
+    position: absolute;
+    left:1rem;
+    font-size: 30px;
+    color:#B88112;
+    padding-top: 1.5rem;
+
+}
+@media(min-width:860px)
+{
+    .toggle
+    {
+        display: none;
+
+    }
+    .itemList
+    {
+        display: flex;
+    }
+
+    .itempics
+    {
+        flex-direction: row;
+
+    }
+    .pic
+    {
+        
+        padding:1rem;
+        height:90%;
+    }
+    .image
+    {
+        width:100%;
+        height:100%;
+    }
+    .mainBlock
+     {
+      display: flex;
+      flex-direction: row;
+     }
+     .rightBlock
+    {
+        margin-top: 2rem;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-row-gap: 18px;
+        grid-column-gap: 8px;
+    }
+
+    .picItem
+        {
+        width:33.33%;
+        height:15rem;
+        border-radius: 8px;
+    
+        }
+    .imageItem
+        {
+            width:250%;
+            height:100%;
+            border-radius: 8px;
+        }
+    .singleBlock
+        {
+            margin-right: 4rem;
+            display: flex;
+            flex-direction: column;
+        }
+
+}
+@media(max-width:860px)
+{
+    .itemList
+    {
+        display: none;
+
+    }
+    .toggle
+    {
+        display:flex;
+    }
+    .pic
+    {
+        padding:2rem;
+        height:7%;
+        
+    }
+    .image
+    {
+        width:100%;
+        height:100%;
+    }
+    .itempics
+    {
+        flex-direction: column;
+    }
+    .mainBlock
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .picItem
+    {
+        padding:1rem;
+        height:18rem;
+        max-width: 30rem;
+    }
+    .imageItem
+    {
+       width:100%;
+       height:100%;
+        border-radius: 8px;
+    }
+    .singleBlock
+        {
+          
+            display: flex;
+            flex-direction: column;
+        }
+}
+.banner
+{
+    font-family: 'Dancing Script', cursive;
+    margin-top:4.5rem;
+    padding:1rem;
+    font-size: 55px;
+    color:white;
+    letter-spacing: 3px;
+    font-weight: bolder;
+    padding-top:6rem;
+
+}
+.intro
+{
+    margin-top: 1rem;
+    padding:1rem;
+    font-size: 20px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    color:white;
+}
+.btn
+{
+    margin:1rem;
+    color:white;
+    font-size: 17px;
+    letter-spacing: 3px;
+    padding:0.25rem;
+    border:white 3px solid;
+    width: fit-content;
+    padding-left:1rem;
+    padding-right: 1rem;
+}
+.itemOne:hover
+{
+    color:#B88112;
+    cursor: pointer;
+}
+.btn:hover
+{
+    cursor: pointer;
+    background-color: white;
+    border:transparent;
+    color:#B88112;
+    font-weight: bold;
+}
+.toggle:hover
+{
+    cursor: pointer;
+    color: #B88112;
+}
+.overlay
+{
+    position: fixed;
+    display: none;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:rgba(100, 94, 81, 0.5);
+    z-index: 4;
+}
+.modal
+{
+    background-color:white ;
+    display: flex;
+    flex-direction: column;
+    padding:4rem;
+    margin:2rem;
+    z-index: 6;
+    position:relative;
+    border-radius: 10px;
+    margin-top:6rem;
+
+}
+.icon
+{
+    position: absolute;
+    top:1rem;
+    right:1rem;
+    font-size: 30px;
+    color:#5C523E;
+}
+.single
+{
+    display: flex;
+    color:#5C523E;
+}
+.iconsingle
+{
+    font-size: 38px;
+    padding:1rem;
+}
+.tag
+{
+    padding:1.5rem;
+    font-weight: bolder;
+    font-size: 22px;
+    letter-spacing: 3px;
+}
+.icon:hover
+{
+    color:#ED2C0E;
+    cursor: pointer;
+}
+.modal
+{
+    display: none;
+}
+.Featured
+{
+    margin-top: 5rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+.heading2
+{
+    padding-top:2rem;
+    text-align: center;
+    color: #8d610a;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    font-size: 27px;
+    margin-bottom: 1rem;
+}
+.itempics
+{
+    display: flex;
+ 
+}
+.pic
+{
+    border-radius: 10px;
+}
+.image
+{
+    border-radius: 10px;
+}
+.name,.price
+{
+    font-size: 18px;
+    letter-spacing: 4px;
+    color:#C5ADA2;
+    font-weight: bolder;
+    text-align: center;
+
+}
+.price
+{
+    color:black;
+    font-size: 20px;
+    padding-top: 1rem;
+}
+.butn
+{
+    text-align: center;
+    font-size: 18px;
+    color:white;
+    background-color: #8d610a;
+    border-radius: 5px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+   padding-top: 0.5rem;
+   padding-bottom: 0.5rem;
+    margin-top: 4rem;
+    width: fit-content;
+    letter-spacing: 4px;
+}
+.butn:hover
+{
+    background-color: white;
+    color:#8d610a;
+    cursor: pointer;
+    font-weight: bolder;
+    border: #8d610a 3px solid;
+}
+.productsSection
+{
+    width:100%;
+    background-color: white;
+    margin-top: 5rem;
+    display:flex;
+    flex-direction: column;
+
+}
+
+.heading3
+{
+    background-color: #E2E2E2;
+    color:#848180;
+    font-size: 30px;
+    letter-spacing: 3px;
+    font-weight: bolder;
+    padding-left: 4rem;
+    padding-top:3rem;
+    padding-bottom:3rem;
+    width:100%;
+}
+.leftBlock
+{
+    margin-top: 4rem;
+    margin-left:4rem;
+    margin-right:2rem;
+}
+.finding
+{
+    padding:0.35rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    font-size: 18px;
+    letter-spacing: 3px;
+    border-radius: 10px;
+    
+
+}
+.headingCompany
+{
+    font-family: 'Dancing Script', cursive;
+    font-weight: bolder;
+    color:black;
+    font-size: 25px;
+    padding-top:1.5rem;
+    letter-spacing: 4px;
+    padding-left:4px;
+}
+.item
+{
+    color:#514D46;
+    font-weight: bolder;
+    padding:8px;
+    font-size: 15px;
+    letter-spacing: 4px;
+}
+.PriceHead
+{
+    font-family: 'Dancing Script', cursive;
+    padding-top:1rem;
+    font-weight: bolder;
+    color:black;
+    letter-spacing: 4px;
+    font-size: 25px;
+    padding-bottom: 0.5rem;
+}
+.Val
+{
+    font-size: 15px;
+    letter-spacing: 4px;
+    color:#514D46;
+    font-weight: bolder;
+    padding-top: 0.5rem;
+}
+
+.singleItem
+{
+    display: flex;
+    flex-direction: column;
+}
+.NameItem
+{
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 4px;
+    color:#514D46;
+    padding-top: 0.25rem;
+    font-weight: bolder;
+}
+.PriceItem
+{
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color:black;
+    padding-top: 0.25rem;
+    font-weight: bolder;
+}
+.productsSection
+{
+    display:none;
+}
+.tag:hover
+{
+    color:black;
+    cursor:pointer;
+    font-weight: bolder;
+}
+.sec
+{
+    background-color: #E2E2E2;
+    color:#848180;
+    font-size: 30px;
+    letter-spacing: 3px;
+    font-weight: bolder;
+    padding-left: 4rem;
+    padding-top:3rem;
+    padding-bottom:3rem;
+    width:100%;
+}
+.AboutSection
+{
+    width:100%;
+    background-color: white;
+    margin-top: 5rem;
+    display:flex;
+    flex-direction: column;
+}
+.AboutHeading
+{
+    padding-top:3rem;
+    text-align: center;
+    font-size: 29px;
+    letter-spacing: 3px;
+    color:black;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bolder;
+    
+
+}
+.content
+{
+    padding-top:2rem;
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 15px;
+    color:#B88112;
+    font-weight: bolder;
+    padding-left:5rem;
+    padding-right: 5rem;
+    padding-bottom:5rem;
+    
+}
+.AboutSection
+{
+    display: none;
+}
+.item:hover
+{
+    cursor: pointer;
+    color:#B88112;
+    font-weight: bolder;
+}
+.icons
+{
+    display:flex;
+    flex-direction: row;
+    position:absolute;
+    left:40%;
+    bottom:50%;
+}
+.singleBlock
+{
+    position: relative;
+}
+.eachitem
+{
+    position: relative;
+}
+.searchIcon,.cartIcon
+{
+    width:40px;
+    height:40px;
+    text-align: center;
+    justify-content: center;
+    padding-top:8px;
+    border-radius:50%;
+    margin-right: 5px;
+    background-color: #B88112;
+    color:white;
+}
+.icons
+{
+    display:none;
+    transition: 0.5s;
+}
+.singleBlock:hover
+{
+    cursor: pointer;
+    
+}
+.singleBlock
+{
+    transition: 0.5s;
+}
+.headingItem
+{
+    background-color: #E2E2E2;
+    color:#848180;
+    font-size: 30px;
+    letter-spacing: 3px;
+    font-weight: bolder;
+    padding-left: 4rem;
+    padding-top:3rem;
+    padding-bottom:3rem;
+    width:100%;
+    margin-top: 3rem;
+}
+.pictureItem
+{
+    width:60%;
+    margin-left: 20%;
+    border-radius: 8px;
+    margin-top: 5rem;
+    height:30%;
+}
+.imgItem
+{
+    width:100%;
+    height:100%;
+    border-radius: 8px;
+}
+.NameOfItem
+{
+    margin-left: 4rem;
+    font-family: 'Dancing Script', cursive;
+    font-size: 35px;
+    font-weight: bolder;
+    color:black;
+    letter-spacing: 3px;
+    text-shadow: #B0ACAF 0.25rem 0.25rem 0.25rem;
+    margin-top: 3rem;
+}
+.BrandItem
+{
+    font-size: 20px;
+    letter-spacing: 4px;
+    color: #B88112;
+    font-weight: bolder;
+    font-style: italic;
+    margin-top: 1rem;
+    margin-left: 4rem;
+}
+.PriceOfItem
+{
+    font-size: 23px;
+    font-weight: bolder;
+    color:black;
+    letter-spacing: 3px;
+    margin-top: 1rem;
+    margin-left:4rem;
+}
+.Colors
+{
+    display: flex;
+    flex-direction: row;
+    margin-left:4rem;
+    margin-top: 1rem;
+}
+.color1,.color2,.color3
+{
+    margin-right:1rem;
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+}
+.color1
+{
+    background-color:#FF5733 ;
+    margin-right: 1rem;
+}
+.color2
+{
+    background-color:#650448 ;
+    margin-right: 1rem;
+}
+.color3
+{
+    background-color:darkgreen;
+}
+.ContentItem
+{
+    text-align: center;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    color:#514D46;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    font-size: 15px;
+    margin-top:3rem;
+}
+.ButtonItem
+{
+   
+    background-color: #8d610a;
+    color:white;
+    letter-spacing: 4px;
+    font-size: 15px;
+    padding:0.25rem;
+    padding-left:1rem;
+    padding-right:1rem;
+    margin-top: 1rem;
+    width: fit-content;
+    text-align: center;
+    margin-left: 4rem;
+    margin-bottom: 4rem;
+}
+.details1,.details2,.details3,.details4,.details5,.details6,.details7,.details8,.details9,.details10,.details11,.details12
+{
+    margin-top: 4rem;
+    display:flex;
+    flex-direction: column;
+    display: none;
+}
+.Cartsection
+{
+    position:fixed;
+    background-color: #ffcccc;
+    display: block;
+    width:40%;
+    height:100%;
+    right:0;
+    top:0;
+    bottom:0;
+    z-index: 4;
+  
+}
+.CloseSection
+{
+    color:#c6538c;
+    font-size: 25px;
+   
+    padding:1rem;
+}
+.CloseSection:hover
+{
+    cursor: pointer;
+    color:#391326;
+    font-weight: bolder;
+    
+}
+.HeadingBag
+{
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    font-weight: bolder;
+    letter-spacing: 4px;
+    color: #650448;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.totalVal
+{
+    font-family: 'Dancing Script', cursive;
+    margin-top: 3rem;
+    left:30%;
+    color: black;
+    font-size: 20px;
+    letter-spacing: 3px;
+    text-align: center;
+    font-weight: bolder;
+}
+.checkBtn
+{
+    margin-top:1rem;
+    margin-left:35%;
+    background-color: #650448;
+    color:white;
+    padding:0.25rem;
+    padding-left:1rem;
+    padding-right:1rem;
+    width:fit-content
+
+}
+.Cartsection
+{
+    display: none;
+    overflow: scroll;
+    overflow-y:scroll;
+}
+.SingleItemOfCart
+{
+
+    display: flex;
+   
+
+}
+.ItemListCart
+{
+    display:flex;
+    flex-direction: column;
+    margin-top:1rem;
+  
+
+}
+ul
+{
+    list-style-type: none;
+    display:flex;
+    flex-direction: column;
+    margin-left:30%
+
+}
+li
+{
+    font-family: cursive;
+    margin-left:30%;
+    color:#650448;
+    font-size: 20px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    margin-bottom:1rem;
+    height:80px;
+}
+img
+{
+    width:95px;
+    height:80px;
+    margin-left: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    border:#650448 solid 3px;
+}
+ul1
+{
+    display: flex;
+    flex-direction: column;
+}
+.quantity
+{
+    color:#650448;
+    font-size: 15px;
+    font-family: cursive;
+    font-weight: bolder;
+    padding-left: 0.35rem;
+
+}
+.ButtonItem:hover
+{
+    cursor:pointer;
+    background-color: white;
+    color:#B88112;
+    font-weight: bolder;
+    border:#B88112 3px solid;
+}
+.cartIcon:hover
+{
+    cursor: pointer;
+}
+.cart:hover
+{
+    cursor:pointer;
+}
+.searchIcon:hover
+{
+    cursor: pointer;
+}
+
+
